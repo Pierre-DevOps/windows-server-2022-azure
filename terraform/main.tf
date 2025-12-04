@@ -1,7 +1,7 @@
 # Configuration Terraform
 terraform {
   required_version = ">= 1.0"
-  
+
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
@@ -29,7 +29,7 @@ provider "azurerm" {
     key_vault {
       purge_soft_delete_on_destroy = false
     }
-    
+
     virtual_machine {
       delete_os_disk_on_deletion     = true
       graceful_shutdown              = true
